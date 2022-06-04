@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>C89</title>
+    </head>
+    <style>
+        #boddy{
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/099/717/small/mountain-beautiful-landscape-background-design-illustration-free-vector.jpg");
+        }
+        center{
+            margin-top: 20%;
+        }
+        h3{
+            text-align: right;
+            color: blue;
+        }
+        input{
+            border-radius: 20%;
+            width:30%;
+        }
+        input:hover{
+            border:2px solid aquamarine;
+        }
+        button{
+            width:30%;
+            color:white;
+            background-color: burlywood;
+        }
+    </style>
+    <body id="boddy">
+        <h3>A-M-P</h3>
+<center>
+    <input id="input1" placeholder="User name">
+    <br>
+    <br>
+    <input id="input2" placeholder="Password">
+    <br>
+    <br>
+    <button onclick="log()">Login</button>
+</center>
+    </body>
+    <script lang="javascript">
+        function log(){
+            var input1 = document.getElementById("input1").value;
+            var input2 = document.getElementById("input2").value;
+            localStorage.setItem("User Name", input1);
+            localStorage.setItem("Password", input2);
+        }
+    </script>
+</html>
